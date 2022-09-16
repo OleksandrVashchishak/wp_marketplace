@@ -1,0 +1,54 @@
+.rc_add-car__wrapper input {
+    display: block;
+    margin-top: 8px;
+}
+.rc_add-car__wrapper button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.remove-car {
+    cursor: pointer;
+}
+
+.pagination ul {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    cursor: pointer;
+    display: block;
+    margin-right: 8px;
+    transition: all 0.5s;
+}
+
+.pagination button.current {
+    color: #f0f0f1;
+    background: #1d2327;
+}
+
+body:before,
+#wpbody-content:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+body:before {
+    position: fixed;
+}
+
+body.loading:before,
+#wpbody-content.loading:before {
+    opacity: 0.6;
+    pointer-events: all;
+}

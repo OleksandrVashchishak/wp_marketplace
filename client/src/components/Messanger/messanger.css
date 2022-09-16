@@ -1,0 +1,139 @@
+.messanger {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: calc(100vh - 70px);
+}
+
+.messanger__wrapper {
+    height: calc(100vh - 70px - 235px);
+    overflow: auto;
+}
+
+.messanger__users {
+    width: 200px;
+    border-right: 1px solid rgb(192, 192, 192);
+    padding-right: 20px;
+}
+
+.messanger__users-wrapper {
+    overflow: auto;
+    height: calc(100vh - 170px);
+}
+
+.messanger__user {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.messanger__user-img.active,
+.messanger__user-img:hover {
+    background-color: #5e4545;
+}
+.messanger__user-img {
+    width: 60px;
+    height: 60px;
+    background-color: #bdbdbd;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.messanger__user-name {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 7px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.messanger__content {
+    width: calc(100% - 200px);
+    padding-left: 20px;
+}
+
+.messanger__massage {
+    margin-left: auto;
+    margin-right: 0;
+    width: max-content;
+    max-width: 220px;
+    margin-bottom: 5px;
+    position: relative;
+    min-width: 120px;
+    padding: 4px 12px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #efefef;
+    font-weight: 300;
+}
+
+.messanger__massage[who="recipiente"] {
+    margin-left: 0;
+    margin-right: auto;
+
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.messanger__massage-time {
+    position: absolute;
+    font-size: 10px;
+    bottom: 1px;
+    left: 1px;
+    display: none;
+}
+
+.messanger__input {
+    padding-top: 20px;
+}
+
+.messanger__input button {
+    width: 200px;
+    margin-top: 25px;
+}
+
+.messanger__new-dialog-popup {
+    position: fixed;
+    top: 50%;
+    min-height: 90vh;
+    min-width: 50vw;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid rgb(192, 192, 192);
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrapr;
+    z-index: 4;
+}
+
+.messanger__new-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.messanger__new-close svg {
+    width: 100%;
+    height: 100%;
+}
+
+.messanger__new-dialog button {
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 13px !important;
+}
